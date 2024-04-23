@@ -132,7 +132,6 @@ def esg_module(data, additionalInfo, searchItem):
         response = chat.send_message("""Follow these instructions very carefully if you mess this step up the whole project will fail. 
                                     Return the asin of the product of the products that you chose in the last step into a structured string format where each tuple provides information about a specific product, including its asin and a long detailed eco-friendly or esg reason for choosing it, or a reason to buy it. Example: "[('asin1', 'reason_for_choosing1'), ('asin2', 'reason_for_choosing2')]". Do not put any bolds. The resulting string will be passed into the python eval() function so keeping the format is very imporatnt.""")
         
-        print(response.text)
         pattern = r"\('([A-Z0-9]+)', '([^']+)'\)"
 
         # Use findall to extract matches
@@ -184,7 +183,6 @@ def fetch_amazon_data(api_key, search_item, price, additionalInfo):
     additional_info_encoded = quote(additionalInfo)
     query_string = f"/search?query={search_item_encoded}%20eco%20friendly%20{additional_info_encoded}&page=1&country=SG&category_id=aps{price_text}&sort_by=RELEVANCE&"
     
-    print(query_string)
     conn.request("GET", query_string, headers=headers)
     res = conn.getresponse()
     
