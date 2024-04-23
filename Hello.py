@@ -52,8 +52,7 @@ def run():
     st.set_page_config(
         page_title="Eco Mart",
         page_icon="🍃",
-        layout="wide",
-        theme=
+        layout="wide"
     )
 
     st.image('image.png', width = 75)
