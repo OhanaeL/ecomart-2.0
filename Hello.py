@@ -36,7 +36,7 @@ if "themes" not in st.session_state:
     st.session_state.themes = {"current_theme": "light", "refreshed": True}
 
 # Initialize Google Generative AI
-genai.configure(api_key=os.getenv("GENAI_API_KEY"))
+genai.configure(api_key="AIzaSyAAQKqvLWBrRwROgyM-zk0mPj8wLgc86Rc")
 model = genai.GenerativeModel('gemini-pro')
 
 LOGGER = get_logger(__name__)
