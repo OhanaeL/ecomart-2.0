@@ -31,8 +31,8 @@ Follow these steps to set up the project on your local machine:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/ecomart.git
-   cd ecomart
+   git clone https://github.com/OhanaeL/ecomart-2.0.git
+   cd ecomart-2.0
    ```
 
 2. Install the required dependencies:
