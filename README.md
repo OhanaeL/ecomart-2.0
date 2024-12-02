@@ -1,4 +1,4 @@
-# EcoMart 🍃: Eco-Friendly Product Search
+# EcoMart🍃: Eco-Friendly Product Search
 
 EcoMart is a simple web application built with **Streamlit** that helps users find eco-friendly alternatives for products they want to buy. The app utilizes the **Amazon Product API** from **RapidAPI** to fetch data and recommend sustainable, eco-friendly products based on user preferences. The inventory of products can be easily modified using RapidAPI keys, and the application supports customizable search features.
 
