@@ -79,14 +79,13 @@ def run():
 
     store = "Amazon"
 
-    additionalInfo = st.sidebar.text_input('Additional Product Info', 'Suggest for Students')
+    additionalInfo = st.sidebar.text_input('Additional Product Info', 'Students')
 
     if st.sidebar.button('Suggest Products'):
         progress_text = "Fetching Products. Please wait."
         my_bar = st.progress(0, text=progress_text)
         amazon_data = fetch_amazon_data(APIKey, searchItem, price, additionalInfo)
            
-        st.write(amazon_data)
         ms['products_with_reasons'] = esg_module(amazon_data, additionalInfo, searchItem)
 
     for product in ms['products_with_reasons']:
