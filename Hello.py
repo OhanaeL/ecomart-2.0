@@ -16,13 +16,11 @@ DEFAULT_PRICE = 0
 GREETING_MESSAGE = "Let Eco Mart know what you're looking for, and we'll guide you to eco-friendly options that align with your values, making conscious shopping choices easier than ever."
 
 # Load API keys securely from environment variables
-API_KEYS = {
-    "APIKey1": os.getenv("API_KEY_1"),
-    "APIKey2": os.getenv("API_KEY_2"),
-    "APIKey3": os.getenv("API_KEY_3"),
-    "APIKey4": os.getenv("API_KEY_4"),
-    "APIKey5": os.getenv("API_KEY_5")
-}
+API_KEYS = {"APIKey1": "1d02052b51msh6dee74f2642bb67p1ab876jsn345ba5f417d8", 
+           "APIKey2": "1d02052b51msh6dee74f2642bb67p1ab876jsn345ba5f417d8", 
+           "APIKey3": "4a10d4e4d5mshfbd8cd7450cc2c7p1e7032jsndbfb762af901", 
+           "APIKey4": "8117d35566mshb8c846b8b54eb78p1add92jsn71abb44d24df", 
+           "APIKey5": "ac3b1d622bmsh1de025fe61bdef8p1d88edjsn7d433b07cd39"}
 
 # Initialize session state variables if they don't exist
 if 'replyText' not in st.session_state:
