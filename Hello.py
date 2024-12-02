@@ -97,7 +97,6 @@ def run():
         st.markdown("Reason: "+product["reasons"])
         st.markdown("Link: "+product["product_url"])
 
-    st.write(st.session_state['replyText'])
 
 def data_pharser(data):
     my_bar.progress(25, text='Parsing Data...')
