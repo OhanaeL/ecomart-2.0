@@ -28,7 +28,7 @@ ms = st.session_state
 
 COEF_THAIBHAT_TO_SINGAPORE = 27.14
 PLACEHOLDER_PRICE = 1000
-APIKeys = {"APIKey1": "0667a56a43msh53362b08d851ee7p1afc52jsnae168cf0d92e", 
+APIKeys = {"APIKey1": "1d02052b51msh6dee74f2642bb67p1ab876jsn345ba5f417d8", 
            "APIKey2": "6442f2a758mshb645a6362702efcp1cb3fajsn40ce767cb6d5", 
            "APIKey3": "4a10d4e4d5mshfbd8cd7450cc2c7p1e7032jsndbfb762af901", 
            "APIKey4": "8117d35566mshb8c846b8b54eb78p1add92jsn71abb44d24df", 
