@@ -22,7 +22,7 @@ from urllib.parse import quote
 
 LOGGER = get_logger(__name__)
 
-genai.configure(api_key="AIzaSyBMyDkqGGk2xC9GEqT7xzNqd_yowtzS26I")
+genai.configure(api_key="AIzaSyADRbAvCOtFs3YAyn1CC5pLjnO05F4gp-U")
 model = genai.GenerativeModel('gemini-pro')
 ms = st.session_state
 
