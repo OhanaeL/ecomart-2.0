@@ -29,7 +29,7 @@ ms = st.session_state
 COEF_THAIBHAT_TO_SINGAPORE = 27.14
 PLACEHOLDER_PRICE = 1000
 APIKeys = {"APIKey1": "1d02052b51msh6dee74f2642bb67p1ab876jsn345ba5f417d8", 
-           "APIKey2": "6442f2a758mshb645a6362702efcp1cb3fajsn40ce767cb6d5", 
+           "APIKey2": "1d02052b51msh6dee74f2642bb67p1ab876jsn345ba5f417d8", 
            "APIKey3": "4a10d4e4d5mshfbd8cd7450cc2c7p1e7032jsndbfb762af901", 
            "APIKey4": "8117d35566mshb8c846b8b54eb78p1add92jsn71abb44d24df", 
            "APIKey5": "ac3b1d622bmsh1de025fe61bdef8p1d88edjsn7d433b07cd39"}
@@ -85,6 +85,8 @@ def run():
         progress_text = "Fetching Products. Please wait."
         my_bar = st.progress(0, text=progress_text)
         amazon_data = fetch_amazon_data(APIKey, searchItem, price, additionalInfo)
+           
+        st.write(amazon_data)
         ms['products_with_reasons'] = esg_module(amazon_data, additionalInfo, searchItem)
 
     for product in ms['products_with_reasons']:
