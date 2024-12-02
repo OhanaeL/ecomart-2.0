@@ -22,17 +22,18 @@ from urllib.parse import quote
 
 LOGGER = get_logger(__name__)
 
-genai.configure(api_key="AIzaSyAgxoQ-YcW77-rz_4imbxWdy-JHg52r-CI")
+genai.configure(api_key=st.secrets["GPT_API_KEY"])
 model = genai.GenerativeModel('gemini-pro')
 ms = st.session_state
 
 COEF_THAIBHAT_TO_SINGAPORE = 27.14
 PLACEHOLDER_PRICE = 1000
-APIKeys = {"APIKey1": "1d02052b51msh6dee74f2642bb67p1ab876jsn345ba5f417d8", 
-           "APIKey2": "1d02052b51msh6dee74f2642bb67p1ab876jsn345ba5f417d8", 
-           "APIKey3": "4a10d4e4d5mshfbd8cd7450cc2c7p1e7032jsndbfb762af901", 
-           "APIKey4": "8117d35566mshb8c846b8b54eb78p1add92jsn71abb44d24df", 
-           "APIKey5": "ac3b1d622bmsh1de025fe61bdef8p1d88edjsn7d433b07cd39"}
+
+APIKeys = {"APIKey1": st.secrets["RAPID_API_KEY1"], 
+           "APIKey2": st.secrets["RAPID_API_KEY2"], 
+           "APIKey3": st.secrets["RAPID_API_KEY3"], 
+           "APIKey4": st.secrets["RAPID_API_KEY4"], 
+           "APIKey5": st.secrets["RAPID_API_KEY5"]}
 
 products_with_reasons = []
 greeting_message = "Let Eco Mart know what you're looking for, and we'll guide you to eco-friendly options that align with your values, making conscious shopping choices easier than ever."
